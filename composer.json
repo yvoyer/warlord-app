@@ -6,6 +6,20 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "star/warlord",
+                "version": "0.1",
+                "source": {
+                    "url": "https://github.com/yvoyer/warlord.git",
+                    "type": "git",
+                    "reference": "origin/develop"
+                }
+            }
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.3.*",
@@ -18,7 +32,8 @@
         "sensio/distribution-bundle": "2.3.*",
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "star/warlord": "*"
     },
     "scripts": {
         "post-install-cmd": [

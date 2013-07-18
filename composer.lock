@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e67df720e8a1a2e0e6df41d91d788e48",
+    "hash": "f6627fe6d29d671061bbb847cfa74588",
     "packages": [
         {
             "name": "doctrine/common",
@@ -688,6 +688,16 @@
             ],
             "description": "This bundle generates code for you",
             "time": "2013-07-04 12:20:59"
+        },
+        {
+            "name": "star/warlord",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yvoyer/warlord.git",
+                "reference": "origin/develop"
+            },
+            "type": "library"
         },
         {
             "name": "swiftmailer/swiftmailer",
