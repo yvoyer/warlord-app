@@ -1,0 +1,9 @@
+{% extends "StarWarlordGameBundle::layout.html.twig" %}
+
+{% block action %}
+    <h1>My game</h1>
+
+    {#<form action="{{ url(newGameForm) }}" method="post">#}
+        {{ form(newGameForm) }}
+    {#</form>#}
+{% endblock %}

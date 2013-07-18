@@ -1,0 +1,15 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+    {% block flash_message %}
+        <ul>
+        {% for flashMessage in app.session.flashbag.get('success') %}
+            <li>{{ flashMessage }}</li>
+        {% endfor %}
+        </ul>
+    {% endblock %}
+
+    {% block action %}CREATE_ACTION{% endblock %}
+
+{% endblock %}
