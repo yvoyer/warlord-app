@@ -1,0 +1,5 @@
+star_warlord_game:
+    resource: "@StarWarlordGameBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
