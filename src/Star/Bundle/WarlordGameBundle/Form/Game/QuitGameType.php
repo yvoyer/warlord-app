@@ -7,6 +7,7 @@
 
 namespace Star\Bundle\WarlordGameBundle\Form\Game;
 
+use Star\Bundle\WarlordGameBundle\Controller\GameController;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Routing\RouterInterface;
@@ -41,7 +42,7 @@ class QuitGameType extends AbstractType
     {
         $builder
             ->add('quit_game', 'submit')
-            ->setAction($this->router->generate('star_game_quit'));
+            ->setAction($this->router->generate(GameController::ACTION_GAME_QUIT));
     }
 
     /**
